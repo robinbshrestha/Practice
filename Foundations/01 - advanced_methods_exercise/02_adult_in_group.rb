@@ -2,6 +2,11 @@
 # The method should return true if there is at least 1 person with an age of 18 or greater.
 # The method should return false otherwise.
 
+def adult_in_group?(people)
+    people.any? do |hash|
+        hash[:age] >= 18
+    end
+end
 
 people_1 = [
     {name: "Jack", age: 17},
